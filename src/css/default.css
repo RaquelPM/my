@@ -1,0 +1,148 @@
+@font-face {
+    font-family: "SH Pinscher-Regular";
+    src: url("SHPinscher-Regular.otf");
+}
+
+body{
+    font-family: "SH Pinscher-Regular";
+}
+
+.clicavel{
+    cursor:pointer;
+}
+
+.icone_padrao{
+    height: 20px;
+    width: 20px;
+}
+
+.margin_2{
+    margin:2px;
+}
+
+.sem_margin_b{
+    margin-bottom: 0px;
+}
+
+.luz_encima{
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-color:#555155;
+    border-left-color: #FFFFFF;
+    border-top-color:#FFFFFF;
+    border-right-color:#555155;
+}
+
+.luz_embaixo_fraca{
+    border-width: 2px;
+    border-style: solid;
+    border-top-color:#A69FA6;
+    border-right-color: #FFFFFF;
+    border-bottom-color:#FFFFFF;
+    border-left-color:#A69FA6
+}
+
+.luz_embaixo{
+    border-width: 2px;
+    border-style: solid;
+    border-bottom-color: #F4EDF4;
+    border-left-color:#282728;
+    border-top-color:#484548;
+    border-right-color:#F4EDF4;
+}
+
+.sombra_azul{
+    border-width: 2px;
+    border-style: solid;
+    border-color:#8f8aa7;
+}
+
+
+#armarinho{
+    width: 122px;
+    height: 120px;
+}
+
+#pastas{
+    max-height: 23px;
+}
+
+#file_cont_pro{
+    margin:2px;
+    max-height: 20px;
+}
+
+#barra_azul{
+    max-height: 30px;
+    margin: 2px;
+}
+
+#btn_start{
+    margin-top: 3px;
+    width: 90px;
+    max-height: 50px;
+    margin-left:5px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+#barrinha{
+    margin-top: 3px;
+    width: 220px;
+    max-height: 50px;
+    margin-left:5px;
+    background-color: #E8EBEB;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+#gerenciador{
+    width: 360px;
+    height: 390px;
+    background: #C4C4C4;
+}
+
+.btn_quadrado{
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+.cinza_padrão{
+    background-color: #C0C7C8;
+}
+
+.cinza_pclicks{
+    background-color: #7F787F;
+}
+
+.azul_escuro_p{
+    background-color: #1616BA;
+}
+
+.branco_padrao{
+    background-color: #FFF8FF;
+}
+
+.texto_8{
+    font-size: 8px;
+}
+
+.texto_branco{
+    color:white;
+}
+
+.texto_under{
+    text-decoration: underline;
+}
+
+.sumiu{
+    transition: opacity 0.7s;
+    overflow: hidden;
+    opacity: 0;
+  }
+  
+.apareceu{
+    -webkit-transition: opacity  0.9s;
+    overflow: hidden;
+    opacity : 1;
+}   
