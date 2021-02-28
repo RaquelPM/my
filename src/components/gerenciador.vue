@@ -46,10 +46,10 @@
                     <p class="texto_8 sem_margin_b" >|</p>
                     <p class="texto_8 sem_margin_b" >|</p>
                 </div>
-                <div class="d-flex flex-column">
-                    <pastas rota="info" nome="Info. Básicas" filename="livrinho.png"/>
-                    <pastas rota="academico" nome="Acadêmico" filename="globinho.png"  />
-                    <pastas nome="Programação" filename="engrenagem.png"/>
+                <div @click="selecionar" class="d-flex flex-column">
+                    <pastas v-bind:class="{sem_acesso:!info, com_acesso:info}" rota="info" nome="Info. Básicas" filename="livrinho.png"/>
+                    <pastas v-bind:class="{sem_acesso:!aca, com_acesso:aca}" rota="academico" nome="Acadêmico" filename="globinho.png"  />
+                    <pastas v-bind:class="{sem_acesso:!proga, com_acesso:proga}" nome="Programação" filename="engrenagem.png"/>
                 </div>
             </div>
         </div> 
@@ -75,6 +75,10 @@ export default{
             clicou:false,
             quadradinho:'+',
             com_altura:false,
+            inf:false,
+            aca:false,
+            proga:false,
+            true:'',
         }
     },
     methods:{
@@ -91,6 +95,24 @@ export default{
             else{this.quadradinho='-';}
             this.com_altura=!this.com_altura;
         },
+        selecionar(){
+            this.atual = this.$router.currentRoute.name;
+            if(this.atual == 'info'){
+                this.info=true;
+                this.aca=false;
+                this.proga=false;
+            }
+            else if(this.atual == 'academico'){
+                this.info=false;
+                this.aca=true;
+                this.proga=false;
+            }
+            else if(this.atual == 'proga'){
+                this.info=false;
+                this.aca=false;
+                this.proga=true;
+            }
+        }
     }
 }
 
@@ -125,5 +147,15 @@ export default{
     overflow: hidden;
     height: 0px;
 }  
+
+.sem_acesso{
+    background-color:none;
+    color:black;
+}
+
+.com_acesso{
+    background-color:#1616BA;
+    color:white;
+}
 
 </style>

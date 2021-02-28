@@ -2,7 +2,7 @@
     <div @click="redirecionar" id="pastas" class="d-flex clicavel">
         <p class="ml-1">-</p>
         <p class="mx-1">-</p>
-        <div v-bind:class="{sem_acesso:!acesso, com_acesso:acesso}" class="d-flex">
+        <div class="d-flex">
             <img :src="require(`@/assets/${filename}`)" class="icone_padrao"/>
             <p>{{nome}}</p>
         </div>
@@ -14,12 +14,6 @@
 import router from '@/router'
 
     export default{
-        data(){
-            return{
-                acesso:false,
-                roter:'',
-            }
-        },
         props:{
             nome:String,
             filename:String,
@@ -27,30 +21,13 @@ import router from '@/router'
 
         },
         watch:{
-            roter:function(){
-                if(this.roter == this.rota){
-                    this.acesso=!this.acesso;
-                }
+            atual:function(){
             }
         },
         methods:{
             redirecionar(){
                 router.push(this.rota);
-                this.roter = this.$router.name;
-                console.log(this.$router);
             }
         }
     }
 </script>
-
-<style>
-.sem_acesso{
-    background-color:none;
-    color:black;
-}
-
-.com_acesso{
-    background-color:#1616BA;
-    color:white;
-}
-</style>

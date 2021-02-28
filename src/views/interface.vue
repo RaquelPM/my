@@ -16,6 +16,7 @@
         </div>
         <transition name="fade">
             <gerenciador :abriu="geren" @mudar="abrir_gerenciador" />
+            <notes :abrir="note"/>
         </transition>
     </div>
 </template>
@@ -31,6 +32,7 @@
         data(){
             return{
                 geren:false,
+                note:false,
             }
         },
         methods:{
