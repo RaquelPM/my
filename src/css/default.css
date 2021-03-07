@@ -5,10 +5,17 @@
 
 body{
     font-family: "SH Pinscher-Regular";
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .clicavel{
     cursor:pointer;
+}
+
+.link{
+    color:#0056C4;
+    text-decoration:underline;
 }
 
 .icone_padrao{
@@ -101,7 +108,7 @@ body{
 }
 
 .boxzinha{
-    max-height:25px;
+    max-height:22px;
     border:dashed;
     border-width:1px;
 }
@@ -135,6 +142,10 @@ body{
 
 .texto_branco{
     color:white;
+}
+
+.texto_cinza{
+    color: #C0C7C8
 }
 
 .texto_under{
