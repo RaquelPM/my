@@ -3,7 +3,7 @@
     <div id="barra_azul" class="azul_escuro_p d-flex sombra_azul">
         <div class="w-75 d-flex align-items-center">
             <img class="icone_padrao mx-1" src="@/assets/comp_lupa.png"/>
-            <p class="texto_branco mt-3" >Exploring - My Potifólio</p>
+            <p class="texto_branco mt-3" >Exploring - My Portfólio</p>
         </div>
         <div class="w-25 d-flex align-items-center justify-content-end">
             <div class="btn_quadrado clicavel cinza_padrão luz_encima d-flex justify-content-center align-items-center" >_</div>

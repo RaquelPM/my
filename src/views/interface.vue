@@ -14,7 +14,7 @@
                 </div>
                 <div v-bind:class="{sumiu:!geren, apareceu:geren}" id="barrinha" class="mb-1 d-flex align-items-center luz_embaixo">
                     <img id="win" src="@/assets/papel_lupa.png"/>
-                    <p id="start" class="mt-3" >Exploring - Potifólio</p>
+                    <p id="start" class="mt-3" >Exploring - Portfólio</p>
                 </div>
             </div>
             <div class="w-25 justify-content-end d-flex mr-1">
