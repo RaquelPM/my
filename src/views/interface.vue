@@ -1,17 +1,27 @@
 <template>
     <div class="d-flex justify-content-center align-items-center w-100 h-100">
-        <div v-on:click="abrir_gerenciador" class="d-flex flex-column align-items-center clicavel">
-            <img id="armarinho" src="@/assets/armarinho.svg"/>
-            <h2 class="texto_branco" >Potifólio</h2>
+        <div class="d-flex flex-column align-items-start w-100 h-100 justify-content-start">
+            <div v-on:click="abrir_gerenciador" class="d-flex flex-column align-items-center clicavel mt-1">
+                <img id="armarinho" src="@/assets/armarinho.svg"/>
+                <p class="texto_branco" >Portfólio</p>
+            </div>
         </div>
         <div id="fim" class="w-100 cinza_padrão fixed-bottom d-flex">
-            <div @click="abrir_gerenciador" id="btn_start" v-on:mouseenter="clico=true" v-on:mouseleave="clico=false" v-bind:class="{luz_encima:!clico, luz_embaixo:clico}" class="mb-1 d-flex justify-content-center clicavel">
-                <img src="@/assets/windows.png"/>
-                <h4 class="mt-1" >Start</h4>
+            <div class="w-75 d-flex">
+                <div @click="abrir_gerenciador" id="btn_start" v-on:mouseenter="clico=true" v-on:mouseleave="clico=false" v-bind:class="{luz_encima:!clico, luz_embaixo:clico}" class="mb-1 d-flex justify-content-center align-items-center clicavel">
+                    <img id="win" src="@/assets/windows.png"/>
+                    <p id="start" class="mt-3 pouca" >Start</p>
+                </div>
+                <div v-bind:class="{sumiu:!geren, apareceu:geren}" id="barrinha" class="mb-1 d-flex align-items-center luz_embaixo">
+                    <img id="win" src="@/assets/papel_lupa.png"/>
+                    <p id="start" class="mt-3" >Exploring - Potifólio</p>
+                </div>
             </div>
-            <div v-bind:class="{sumiu:!geren, apareceu:geren}" id="barrinha" class="mb-1 d-flex align-items-center luz_embaixo">
-                <img src="@/assets/papel_lupa.png"/>
-                <h4 class="mt-1" >Exploring - Potifólio</h4>
+            <div class="w-25 justify-content-end d-flex mr-1">
+                <div id="relogio" class="d-flex justify-content-center align-items-center luz_embaixo_fraca">
+                    <img id="relogin" src="@/assets/relogin.png" class="mr-2 ml-1"/>
+                    <p class="mt-3 mr-1" >2:22 PM</p>
+                </div>
             </div>
         </div>
         <div class="movel position-absolute">
@@ -172,6 +182,28 @@
 }
 .fade-enter, .fade-leave {
   opacity: 0;
+}
+
+#win{
+    width:35px;
+    height:25px;
+}
+
+#start{
+    font-size:20px;
+}
+
+#relogin{
+    width:20px;
+    height:20px
+}
+
+#relogio{
+    margin-top: 3px;
+    width: 85px;
+    max-height: 30px;
+    margin-left:5px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
 }
 
 </style>
