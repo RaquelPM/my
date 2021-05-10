@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div @click="abrir_notes_pro_cursos" class="d-flex">
+        <div @click="abrir_notes_pro_cursos" class="d-flex clicavel">
             <img src="../assets/notas.png" class="icone_padrao"/>
             <div v-bind:class="{boxzinha:notes_pro_cursos, barra:!notes_pro_cursos}" class="d-flex align-items-center">
                 <p class="pl-1 mt-3" >Cursos</p>
             </div>
         </div>
-        <div @click="abrir_notes_pro_projetos" class="d-flex">
+        <div @click="abrir_notes_pro_projetos" class="d-flex clicavel">
             <img src="../assets/notas.png" class="icone_padrao"/>
             <div v-bind:class="{boxzinha:notes_pro_projetos, barra:!notes_pro_projetos}" class="d-flex align-items-center">
                 <p class="pl-1 mt-3" >Projetos finalizados</p>

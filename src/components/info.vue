@@ -1,6 +1,6 @@
 <template>
     <div>
-        <div @click="abrir_notes" class="d-flex">
+        <div @click="abrir_notes" class="d-flex clicavel">
             <img src="../assets/notas.png" class="icone_padrao"/>
             <div v-bind:class="{boxzinha:notes_info, barra:!notes_info}" class="d-flex align-items-center">
                 <p class="pl-1 mt-3" >InformaçõesBásicas</p>

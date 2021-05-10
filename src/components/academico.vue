@@ -1,12 +1,12 @@
 <template>
     <div>
-        <div @click="abrir_notes_aca_pro" class="d-flex">
+        <div @click="abrir_notes_aca_pro" class="d-flex clicavel">
             <img src="../assets/notas.png" class="icone_padrao"/>
             <div v-bind:class="{boxzinha:notes_aca_pro, barra:!notes_aca_pro}" class="d-flex align-items-center">
                 <p class="pl-1 mt-3" >Projetos e extensões</p>
             </div>
         </div>
-        <div @click="abrir_notes_aca_comp" class="d-flex">
+        <div @click="abrir_notes_aca_comp" class="d-flex clicavel">
             <img src="../assets/notas.png" class="icone_padrao"/>
             <div v-bind:class="{boxzinha:notes_aca_comp, barra:!notes_aca_comp}" class="d-flex align-items-center">
                 <p class="pl-1 mt-3" >Competições</p>

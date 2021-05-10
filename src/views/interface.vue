@@ -40,7 +40,7 @@
                     <p class="pouca_pouca">Raquel Patrício Moraes</p>
                     <p class="pouca_pouca">17 anos (12/15/2003)</p>
                     <p class="pouca_pouca">Cursando o 3° ano do ensino técnico em eletrônica integrado ao ensino médio</p>
-                    <p class="pouca_pouca">Português e Inglês</p>
+                    <p class="pouca_pouca">Português, Inglês e Libras</p>
                 </notes>
             </div>
         </transition>
@@ -77,14 +77,16 @@
         <transition name="fade">
             <div class="mooooovel position-absolute">
                     <notes :abrir="note_pro_cursos" titulo="Cursos" action="att_notes_pro_cursos">
-                        <p class="pouca_pouca mt-1">domínio em: HTML, CSS, C++ e Vue.js</p>
+                        <p class="pouca_pouca mt-1">domínio em: HTML, CSS, C++, Vue.js e React.js</p>
                         <div class="d-flex justify-content-center align-items-center flex-column">
                             <p class="pouca">-----------------------------</p>
                             <p class="pouca">Cursos e eventos</p>
                             <p class="pouca">-----------------------------</p>
                         </div>
                         <p class="pouca_pouca">Introdução ao Vue 3 - Sarah Drasner</p>
+                        <p class="pouca_pouca">Vuex para developers intermediários - Divya Tagtachian</p>
                         <p class="pouca_pouca">Recursos avançados do Vue.js - Evan You</p>
+                        <p class="pouca_pouca">Introdução completa ao React, v5 - Brian Holt</p>
                         <p class="pouca_pouca">Next Level Week 1 e 2</p>
                         <p class="pouca_pouca">Arduino Day 2019</p>
                     </notes>

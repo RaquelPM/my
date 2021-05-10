@@ -38,8 +38,6 @@ export default{
         },
         copy(){
             var copyTextarea = this.$refs.copiar;
-
-            window.open('https://nocton.tech/#contato', '_blank');
         
             copyTextarea.select();
 
