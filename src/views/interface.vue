@@ -39,8 +39,10 @@
                     </div>
                     <p class="pouca_pouca">Raquel Patrício Moraes</p>
                     <p class="pouca_pouca">17 anos (12/15/2003)</p>
-                    <p class="pouca_pouca">Cursando o 3° ano do ensino técnico em eletrônica integrado ao ensino médio</p>
+                    <p class="pouca_pouca">Cursando o 4° ano do ensino técnico em eletrônica integrado ao ensino médio</p>
                     <p class="pouca_pouca">Português, Inglês e Libras</p>
+                    <p class="pouca_pouca">domínio em: HTML, CSS, JS, C++, Vue.js, Nuxt.js, React.js, Bootstrap e Tailwind</p>
+                        <p class="pouca_pouca">experiência com: Git e Storybook</p>
                 </notes>
             </div>
         </transition>
@@ -71,14 +73,16 @@
                         <p class="pouca_pouca">Medalha de ouro OBR teórica - 2020</p>
                         <p class="pouca_pouca">Medalha de prata OBA  - 2020</p>
                         <p class="pouca_pouca">Medalha de ouro ONC - 2020</p>
+                        <p class="pouca_pouca">Medalha de ouro OBR prática - 2021</p>
+                        <p class="pouca_pouca">Medalha de prata OBA - 2021</p>
+                        <p class="pouca_pouca">Medalha de cristal ONHB - 2021</p>
                     </notes>
             </div>
         </transition>
         <transition name="fade">
             <div class="mooooovel position-absolute">
                     <notes :abrir="note_pro_cursos" titulo="Cursos" action="att_notes_pro_cursos">
-                        <p class="pouca_pouca mt-1">domínio em: HTML, CSS, C++, Vue.js e React.js</p>
-                        <div class="d-flex justify-content-center align-items-center flex-column">
+                        <div class="d-flex justify-content-center align-items-center flex-column mt-1">
                             <p class="pouca">-----------------------------</p>
                             <p class="pouca">Cursos e eventos</p>
                             <p class="pouca">-----------------------------</p>
@@ -100,7 +104,7 @@
                             <p class="pouca">Projetos</p>
                             <p class="pouca">-----------------------------</p>
                         </div>
-                        <p @click="ir('https://nocton.tech/')" class="link pouca_pouca">/portfolio_equipe_Nocton</p>
+                        <p @click="ir('https://painel.nexboard.com.br/plans')" class="link pouca_pouca">/painel_nexboard_studio</p>
                         <p @click="ir('https://github.com/nocton/checaaqui')" class="link pouca_pouca">/checaaqui</p>
                     </notes>
             </div>

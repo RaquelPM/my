@@ -23,7 +23,7 @@
             <p class="mx-1" >All Folders</p>
         </div>
         <div  class=" content_of luz_embaixo_fraca">
-            <p class="mx-1" >Content of 'xxxx'</p>
+            <p class="mx-1" >Content of {{$router.currentRoute.name}}</p>
         </div>
     </div>
     <div class="d-flex h-75 margin_2">
