@@ -55,7 +55,7 @@
                         <p class="pouca">-----------------------------</p>
                     </div>
                     <p class="pouca_pouca">Criação do museu de minerologia do câmpus João Pessoa</p>
-                    <p class="pouca_pouca">Aluna do POP</p>
+                    <p class="pouca_pouca">Aluna do Projeto Olímpico de Programação</p>
                     <p class="pouca_pouca">Membro do GREL (Grupo de robótica educacional livre - IFPB)</p>
                 </notes>
             </div>
