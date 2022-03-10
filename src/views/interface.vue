@@ -38,11 +38,11 @@
                         <p class="pouca">-----------------------------</p>
                     </div>
                     <p class="pouca_pouca">Raquel Patrício Moraes</p>
-                    <p class="pouca_pouca">17 anos (12/15/2003)</p>
-                    <p class="pouca_pouca">Cursando o 4° ano do ensino técnico em eletrônica integrado ao ensino médio</p>
+                    <p class="pouca_pouca">18 anos (12/15/2003)</p>
+                    <p class="pouca_pouca">Técnica em eletrônica pelo Instituto federal de ciência, educação e tecnologia da paraíba</p>
                     <p class="pouca_pouca">Português, Inglês e Libras</p>
                     <p class="pouca_pouca">domínio em: HTML, CSS, JS, C++, Vue.js, Nuxt.js, React.js, Bootstrap e Tailwind</p>
-                        <p class="pouca_pouca">experiência com: Git e Storybook</p>
+                        <p class="pouca_pouca">experiência com: Git, Storybook e Socket.io</p>
                 </notes>
             </div>
         </transition>
@@ -57,6 +57,7 @@
                     <p class="pouca_pouca">Criação do museu de minerologia do câmpus João Pessoa</p>
                     <p class="pouca_pouca">Aluna do Projeto Olímpico de Programação</p>
                     <p class="pouca_pouca">Membro do GREL (Grupo de robótica educacional livre - IFPB)</p>
+                    <p class="pouca_pouca">Mentorada da iniciativa Wanderlust</p>
                 </notes>
             </div>
         </transition>
@@ -90,6 +91,7 @@
                         <p class="pouca_pouca">Introdução ao Vue 3 - Sarah Drasner</p>
                         <p class="pouca_pouca">Vuex para developers intermediários - Divya Tagtachian</p>
                         <p class="pouca_pouca">Recursos avançados do Vue.js - Evan You</p>
+                        <p class="pouca_pouca">Vue 3 com typescript - Vue Mastery</p>
                         <p class="pouca_pouca">Introdução completa ao React, v5 - Brian Holt</p>
                         <p class="pouca_pouca">Next Level Week 1 e 2</p>
                         <p class="pouca_pouca">Arduino Day 2019</p>
@@ -106,6 +108,7 @@
                         </div>
                         <p @click="ir('https://painel.nexboard.com.br/plans')" class="link pouca_pouca">/painel_nexboard_studio</p>
                         <p @click="ir('https://github.com/nocton/checaaqui')" class="link pouca_pouca">/checaaqui</p>
+                        <p @click="ir('https://app2.weptek.xyz/')" class="link pouca_pouca">/weptek</p>
                     </notes>
             </div>
         </transition>
